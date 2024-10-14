@@ -3,6 +3,7 @@ import Header from "../../components/header"
 import Api from "../../services/api"
 import { TypeData } from "../../types/data"
 import Card from "../../components/card"
+import Footer from "../../components/footer"
 
 const Home = () => {
 
@@ -60,6 +61,8 @@ const Home = () => {
                     </div>
                 )}
             </div>
+
+            <Footer />
         </div>
     )
 }

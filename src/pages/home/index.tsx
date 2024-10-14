@@ -1,7 +1,17 @@
+import { useState } from "react"
+import Header from "../../components/header"
+
 const Home = () => {
+
+    const [showFavorites, setShowFavorites] = useState(false)
+    
+    const handleMenuClick = (menu: string) => {
+        setShowFavorites(menu === "favoritos")
+    }
+
     return(
         <div>
-            <h1>Olá mundo</h1>
+            <Header onMenuClick={handleMenuClick} showFavorites={showFavorites}/>
         </div>
     )
 }

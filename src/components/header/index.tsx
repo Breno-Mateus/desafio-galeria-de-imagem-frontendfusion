@@ -12,7 +12,7 @@ const Header = ({onMenuClick, showFavorites} : PropsSideMenu) => {
     const [isOpen, setOpen] = useState(false)
 
     return (
-        <header className="flex flex-col p-6 w-full fixed top-0 z-[1000] border-b border-textColor bg-background text-textColor">
+        <header className="flex flex-col p-3 w-full fixed top-0 z-[1000] border-b border-textColor bg-background text-textColor">
             <div className="flex items-center justify-between gap-8">
                 <div className="flex items-center gap-4">
                     <BsImages className="text-lg"/>
